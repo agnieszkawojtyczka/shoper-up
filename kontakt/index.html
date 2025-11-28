@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Strona główna</a>
+        <a href="../linki/index.html">Linki</a>
+        <a href="../kontakt/index.html">Kontakt</a>
+    </header>
+
+    <main>
+        <section>
+            <h1>STRONA KONTAKTOWA</h1>
+        </section>
+
+        <section>
+            <h2>Formularz kontaktowy</h2>
+                <form action="#">
+                    <fieldset>
+                        <div>
+                            <label for="firstName">Imię:</label>
+                            <input id="firstName" name="firstName" type="text">
+                        </div>
+                        
+                        <div>
+                            <label for="lastName">Nazwisko:</label>
+                            <input id="lastName" name="lastName" type="text">
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input id="email" name="email" type="email">
+                        </div>
+
+                        <div>
+                            <label for="phoneNumber">Numer telefonu:</label>
+                            <input id="phoneNumber" name="phoneNumber" type="number">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div>
+                            <label for="topic">Temat wiadomości</label>
+                            <select name="topic" id="topic">
+                                <option value="menu">Edycja menu</option>
+                                <option value="domain">Domena</option>
+                                <option value="mail">Skrzynka mailowa</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message">Treść zgłoszenia</label>
+                            <textarea id="message" name="message" rows="3" columns="50"></textarea>
+                            
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div>
+                            <input id="terms" type="checkbox">
+                            <label for="terms">Akceptuję regulamin i zgadzam się na przetrwarzanie moich danych w celu realizacji zgłoszenia</label>
+                        </div>
+
+                        <div>
+                            <input value="Wyślij" type="submit">
+                        </div>
+                    </fieldset>
+                </form>
+        </section>
+
+        <section>
+
+            <h2>Formularz test radio</h2>
+                <form action="#">
+                    <div>
+                        <label for="male">Mężczyna</label>
+                        <input id="male" name="gender" value="male" type="radio">
+
+                        <label for="female">Kobieta</label>
+                        <input id="female" name="gender" value="female" type="radio">
+
+                    </div>
+                </form>
+        </section>
+
+    </main>
+
+    <footer>
+        Copyright © 2025 Moja strona
+    </footer>
+
+
+</body>
+</html>
