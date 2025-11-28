@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Moja pierwsza strona</title>
+
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
     <header>
-        <nav>
+        <nav class="page-nav">
             <a href="./index.html">Strona główna</a>
             <a href="./linki/index.html">Linki</a>
             <a href="./kontakt/index.html">Kontakt</a>
@@ -18,13 +21,13 @@
     <main>
 
     </main>
-        <section>
+        <section class="section">
             <h1>STRONA GŁÓWNA</h1>
                 <p>Jakiś tekst</p>
                 <p>Jakiś tekst 2</p>
         </section>
 
-        <section>
+        <section class="section">
             <h2>sekcja 1</h2>
                 <span>Tekst w spanie</span>
                 <span>Tekst w spanie 2</span>
@@ -37,7 +40,7 @@
                 <a href="#promo">Zobacz</a>
         </section>
 
-        <section>
+        <section class="section">
             <h2>sekcja 2</h2>
                 <h3>Lista 1</h3>
                     <ul>
@@ -53,7 +56,7 @@
                     </ol>
         </section>
 
-        <section>
+        <section class="section">
             <h2>sekcja 3</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat quae necessitatibus at voluptatibus, incidunt consequatur nobis, optio beatae laboriosam vel asperiores itaque numquam quidem aliquam natus nostrum magnam praesentium?</p>
 
@@ -62,9 +65,54 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat quae necessitatibus at voluptatibus, incidunt consequatur nobis, optio beatae laboriosam vel asperiores itaque numquam quidem aliquam natus nostrum magnam praesentium?</p>
             </section>
 
-        <section>
+        <section class="section promo-section">
             <h2>sekcja 4</h2>
             <p id="promo"> <strong>PROMO PROMO PROMO</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat quae necessitatibus at voluptatibus, incidunt consequatur nobis, optio beatae laboriosam vel asperiores itaque numquam quidem aliquam natus nostrum magnam praesentium?</p>
+        </section>
+
+        <section class="section">
+            <h2>sekcja 5 - tabela</h2>
+                <table border="1" width="100%" rw>
+                    <thead>
+                        <tr>
+                            <th>lp.</th>
+                            <th>Imię</th>
+                            <th>Nazwisko</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>Jan</td>
+                            <td>Kowalski</td>
+                        </tr>
+
+                        <tr>
+                            <td>2.</td>
+                            <td>Anna</td>
+                            <td>Nowak</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>3.</td>
+                            <td>Piotr</td>
+                            <td>Robak</td>
+                        </tr>
+
+                        <tr>
+                            <td>4.</td>
+                            <td colspan="2">Adam</td>
+                        </tr>    
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">end</td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
         </section>
     
     <footer>
