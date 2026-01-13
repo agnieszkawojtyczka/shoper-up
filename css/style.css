@@ -1,0 +1,22 @@
+.page-nav {
+    background: #768C57;
+}
+
+a {
+    color: #E1E6DA;
+    font-size: 20px;
+}
+
+h1, h2 {
+    color: #768C57;
+}
+
+.section {
+    background: #E1E6DA;
+    padding: 1px;
+    margin: 10px;
+}
+
+.section.promo-section {
+    background: #BBCCA3;
+}
