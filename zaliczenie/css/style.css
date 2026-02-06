@@ -1,0 +1,302 @@
+body {
+    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* szerokość strony */
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 900px;
+        padding: 10px 10px;
+        margin: 20px 0 0 20px
+    }
+}
+
+/* menu */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding:5px;
+    background-color: #fafafa;
+    border-bottom: 2px solid #dbdbdb;
+}
+
+.nav-button {
+    margin-right: 10px;
+    max-height: 24px;
+}
+
+.nav-user {
+    max-height: 24px;
+    border-radius: 50%;
+}
+
+.user-icon {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
+/*
+.page-content-container {
+}
+*/
+
+@media screen and (min-width: 768px) {
+    .page-content-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*stories box */
+
+.stories-container img {
+    border: 2px solid #dd2a7c;
+}
+
+.stories-container {
+    display: flex;
+    border: 2px solid #dbdbdb;
+    border-radius: 15px;
+    background-color: #fafafa;
+    padding: 10px 0 0 10px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.user-stories-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* posty */
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #dbdbdb;
+    border-radius: 15px;
+    background-color: #fafafa;
+    margin-bottom: 20px;
+}
+
+.post-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dots-icon {
+    max-width: 35px;
+    margin-right: 10px;
+}
+
+.post-author-container {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.author-details-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1,5;
+}
+
+.post-author-name {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post-location {
+    font-size: 10px;
+    color: #969696;
+}
+
+.post-author-container p {
+    margin: 0;
+}
+
+.post-user-icon {
+    max-width: 35px;
+    max-height: 35px;
+    border: 2px solid #dd2a7c;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-icons-container {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post-icon {
+    margin-right: 10px;
+}
+
+.post-container img {
+    max-width: auto;
+}
+
+.likes-container {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.post-description-container {
+    margin: 0 10px 10px 10px;
+}
+
+.comments-container {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    border-top: 2px solid #dbdbdb
+}
+
+.smile-icon {
+    margin-right: 10px;
+}
+
+.comments-container p {
+    color: #969696;
+}
+
+/* więcej */
+
+.more-container {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #dbdbdb;
+    border-radius: 15px;
+    background-color: #fafafa;
+}
+
+/* extra container */
+
+.extra-section-container {
+    display: none
+}
+
+@media screen and (min-width: 768px) {
+    .extra-section-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .extra-section-container img {
+        border-radius: 50%;
+        max-width: 35px;
+        max-height: 35px;
+        border: 2px solid #dd2a7c;
+        margin-right: 10px;
+    }
+
+        /* extra - user container */
+
+    .user-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #dbdbdb;
+        padding: 10px 0 0 0;
+        }
+
+    .user-container img {
+        border-radius: 50%;
+        max-width: 50px;
+        max-height: 50px;
+        border: 2px solid #dd2a7c;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .user-switch-text {
+        display: flex;
+        align-items: center;
+        font-size: 9px;
+    }
+
+    .extra-user-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .addictional-info {
+        color: #969696;
+        line-height: 1,5;
+    }
+
+        /* extra - recommendations container */
+
+    .recommendations-text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .recommendations {
+        color: #969696;
+    }
+
+
+    .recommendations-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .recommendations-users-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-follow-text {
+        display: flex;
+        justify-content: space-between;
+        font-size: 9px;
+    }
+
+    .extra-action-button {
+        color: #3095f6;
+        font-weight: bold;
+    }
+
+}
+
+/* stopka */
+
+.footer-container {
+    font-size: 11px;
+}
+
+.footer-container a {
+    color: #969696;
+}
+
+.footer-container p {
+    color: #969696;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
