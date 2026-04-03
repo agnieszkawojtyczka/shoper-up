@@ -4,6 +4,31 @@
 
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
-
 }
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: $color-secondary;
+
+    &:hover {
+        color: darken($color-secondary, $amount: 20%)
+    }
+}
+
+p {
+  @include text-style($color-black, 20px);
+}
+
+h1 {
+    @include text-style($color-secondary, 36px);
+    font-weight: bold;
+}
+
+h2 {
+    @include text-style($color-secondary,26px);
+    font-weight: bold;
+}
+
