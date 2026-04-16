@@ -1,6 +1,15 @@
+//Helpers
+@import "helpers/placeholders";
+@import "helpers/mixins";
+
 // Base
+@import "base/colors";
 @import "base/base";
+@import "base/variables";
 
 // Components
+@import "components/container/container";
+@import "components/news/news";
 @import "components/page-header/page-header";
-@import "components/page-footer/page-footer"
+@import "components/page-footer/page-footer";
+@import "components/button/button";
