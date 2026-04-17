@@ -74,4 +74,38 @@ h2 {
   padding-left: 5px;
   padding-right: 5px;
   margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.btn-main {
+  background-color: #34495e;
+  color: #F5F5F5;
+  border: none;
+  padding: 10px, 20px;
+  border-radius: 10px;
+}
+.btn-main:hover {
+  color: rgb(33.8356164384, 47.5, 61.1643835616);
+}
+
+.btn-save {
+  background-color: #27ae60;
+  color: #F5F5F5;
+  border: none;
+  padding: 10px, 20px;
+  border-radius: 10px;
+}
+.btn-save:hover {
+  color: rgb(29.661971831, 132.338028169, 73.014084507);
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: #F5F5F5;
+  border: none;
+  padding: 10px, 20px;
+  border-radius: 10px;
+}
+.btn-delete:hover {
+  color: rgb(213.698630137, 43.8356164384, 26.301369863);
 }/*# sourceMappingURL=style.css.map */

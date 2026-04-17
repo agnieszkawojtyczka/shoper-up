@@ -19,7 +19,7 @@ a {
 }
 
 p {
-  @include text-style($color-black, 20px);
+    @include text-style($color-black, 20px);
 }
 
 h1 {

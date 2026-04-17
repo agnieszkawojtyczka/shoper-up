@@ -4,8 +4,11 @@
 
 // Base
 @import "base/colors";
-@import "base/base";
 @import "base/variables";
+@import "base/functions";
+@import "base/base";
+@import "base/settings";
+
 
 // Components
 @import "components/container/container";
