@@ -3,3 +3,17 @@
     font-size: $font-size;
     font-weight: normal;
 }
+
+
+@mixin button-style($name) {
+    $btn-color: get-btn-color($name);
+    background-color: $btn-color;
+    color: $color-white;
+    border: none;
+    padding: 10px, 20px;
+    border-radius: 10px;
+
+    &:hover {
+        color: darken($btn-color, 10%);
+    }
+}

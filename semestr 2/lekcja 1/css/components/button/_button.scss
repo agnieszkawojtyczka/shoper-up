@@ -6,5 +6,18 @@
     padding-left: $base-padding / 2 ;
     padding-right: $base-padding / 2;
     margin-bottom: 10px;
+    margin-top: 10px;
 
+}
+
+.btn-main {
+    @include button-style(default);
+}
+
+.btn-save {
+    @include button-style(success);
+}
+
+.btn-delete {
+    @include button-style(error);
 }
