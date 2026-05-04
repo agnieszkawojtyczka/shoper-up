@@ -1,6 +1,9 @@
+@use "../base/settings" as *;
+@use "sass:map";
+
 @function get-btn-color($name) {
-  @if map-has-key($button-colors, $name) {
-      @return map-get($button-colors, $name);
+  @if map.has-key($button-colors, $name) {
+      @return map.get($button-colors, $name);
   } @else {
     @warn "Klucz '#{$name}' nie istnieje w mapie $button-colors. Zwrócono domyślny kolor czarny.";
     @return #000;

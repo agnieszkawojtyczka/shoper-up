@@ -1,3 +1,22 @@
+@use "../../helpers/placeholders" as *;
+@keyframes animation-recording-on {
+    0% { scale: 1; opacity: 1 }
+    100% { scale: 1.5; opacity: 0.05 }
+}
+
 .page-header {
     @extend %center-vertical;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    animation-name: animation-recording-on;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
 }

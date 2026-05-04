@@ -1,18 +1,9 @@
-//Helpers
-@import "helpers/placeholders";
-@import "helpers/mixins";
-
-// Base
-@import "base/colors";
-@import "base/variables";
-@import "base/functions";
-@import "base/base";
-@import "base/settings";
-
+//Base
+@use "base/base" as *;
 
 // Components
-@import "components/container/container";
-@import "components/news/news";
-@import "components/page-header/page-header";
-@import "components/page-footer/page-footer";
-@import "components/button/button";
+@use "components/container/container" as *;
+@use "components/news/news" as *;
+@use "components/page-header/page-header" as *;
+@use "components/page-footer/page-footer" as *;
+@use "components/button/button" as *;

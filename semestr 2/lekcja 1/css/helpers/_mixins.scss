@@ -1,9 +1,12 @@
+@use "../base/colors" as *;
+@use "sass:color";
+@use "../base/functions" as *;
+
 @mixin text-style($color, $font-size, $font-weight: normal) {
     color: $color;
     font-size: $font-size;
     font-weight: normal;
 }
-
 
 @mixin button-style($name) {
     $btn-color: get-btn-color($name);
@@ -14,6 +17,6 @@
     border-radius: 10px;
 
     &:hover {
-        color: darken($btn-color, 10%);
+        color: color.adjust($btn-color, $lightness: -10%);
     }
 }
