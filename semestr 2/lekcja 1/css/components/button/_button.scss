@@ -37,7 +37,22 @@
         background-color: green;
         color: $color-black; 
         transform: scale(1.1);
+    }   
+}
+
+.btn-arrow {
+    &::after {
+        content: "→";
+        opacity: 0;
+        display: inline-block;
+        transition: all 0.3s ease; 
     }
-    
-        
+
+    &:hover {
+        &::after {
+            content: " →";
+            opacity: 1;
+            transform: translateX(5px);
+        }
+    } 
 }

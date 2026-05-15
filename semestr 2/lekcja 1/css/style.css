@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
@@ -167,4 +168,35 @@ h2 {
   background-color: green;
   color: #1F1F1F;
   transform: scale(1.1);
+}
+
+.btn-arrow::after {
+  content: "→";
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+.btn-arrow:hover::after {
+  content: " →";
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+tr:first-child {
+  font-weight: bold;
+}
+tr:last-child td {
+  border-bottom: 2px solid red;
+}
+tr:nth-child(even) {
+  background-color: #ccc;
+}
+tr:nth-child(5) {
+  color: gold;
 }/*# sourceMappingURL=style.css.map */
