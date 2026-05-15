@@ -1,3 +1,7 @@
+@use "colors" as *;
+@use "sass:color";
+@use "../helpers/mixins" as *;
+
 * {
     box-sizing: border-box;
 }
@@ -14,7 +18,7 @@ a {
     color: $color-secondary;
 
     &:hover {
-        color: darken($color-secondary, $amount: 20%)
+        color: color.adjust($color-secondary, $lightness: -20%)
     }
 }
 
